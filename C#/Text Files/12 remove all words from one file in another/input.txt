@@ -1,0 +1,114 @@
+System;
+System.Collections.Generic;
+System.IO;
+System.Linq;
+System.Text;
+System.Threading.Tasks;
+
+_12_remove_all_words_from_one_file_in_another
+
+    //Write a program that removes from a text file all words listed 
+    //in given another text file. Handle all possible exceptions in your methods.
+    Program
+    
+        Main(string[] args)
+        
+            List<string> newFile = new List<string>();
+            //read source file
+            ReadFile(newFile, @"..\..\Program.cs");
+            //write it to input.txt
+            WriteFile(newFile, @"..\..\input.txt");
+
+            List<string> dictionary = new List<string>();
+            ReadDictionary(dictionary);
+
+            newFile.Clear();
+            StreamReader reader = new StreamReader(@"..\..\input.txt");
+            (reader)
+            
+                line = reader.ReadLine();
+                string[] str;
+                StringBuilder evaluatedLine = new StringBuilder();
+                bool addWord = false;
+                while (line != null)
+                
+                    str = line.Split(' ');
+                    for (int i = 0; i < str.Length; i++)
+                    
+                        addWord = true;
+                        foreach (var word in dictionary)
+                        
+                            if (word.Equals(str[i]))
+                            
+                                addWord = false;
+                                break;
+                            
+                        
+                        if (addWord)
+                        
+                            evaluatedLine.Append(str[i]);
+                            if (i < str.Length - 1)
+                            
+                                evaluatedLine.Append(' ');
+                            
+                        
+
+                    
+
+                    newFile.Add(evaluatedLine.ToString());
+                    line = reader.ReadLine();
+                    evaluatedLine.Clear();
+                
+            
+
+
+            WriteFile(newFile, @"..\..\input.txt");
+
+        
+
+        ReadDictionary(List<string> dictionary)
+        
+            StreamReader reader = new StreamReader(@"..\..\dictionary.txt");
+            (reader)
+            
+                line = reader.ReadLine();
+                string[] str;
+                while (line != null)
+                
+                    str = line.Split(' ');
+                    foreach (var item in str)
+                    
+                        dictionary.Add(item);
+                    
+                    line = reader.ReadLine();
+                
+            
+        
+
+        WriteFile(List<string> newFile, fileName)
+        
+            StreamWriter writer = new StreamWriter(fileName);
+            (writer)
+            
+                for (int i = 0; i < newFile.Count; i++)
+                
+                    writer.WriteLine(newFile[i]);
+                
+            
+        
+
+        ReadFile(List<string> newFile, fileName)
+        
+            StreamReader reader = new StreamReader(fileName);
+            (reader)
+            
+                line = reader.ReadLine();
+                while (line != null)
+                
+                    newFile.Add(line);
+                    line = reader.ReadLine();
+                
+            
+        
+    
+

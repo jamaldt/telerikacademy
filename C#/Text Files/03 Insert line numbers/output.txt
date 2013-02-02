@@ -1,0 +1,51 @@
+   1: using System;
+   2: using System.Collections.Generic;
+   3: using System.IO;
+   4: using System.Linq;
+   5: using System.Text;
+   6: using System.Threading.Tasks;
+   7: 
+   8: namespace _03_Insert_line_numbers
+   9: {
+  10:     //Write a program that reads a text file and inserts line numbers in front of each of its lines. 
+  11:     //The result should be written to another text file.
+  12:     class Program
+  13:     {
+  14:         static void Main(string[] args)
+  15:         {
+  16:             List<string> newFile = new List<string>();
+  17:             ReadFile(newFile, @"..\..\Program.cs");
+  18:             WriteFile(newFile, @"..\..\output.txt");
+  19:         }
+  20: 
+  21:         private static void WriteFile(List<string> newFile, string fileName)
+  22:         {
+  23:             StreamWriter writer = new StreamWriter(fileName);
+  24:             using (writer)
+  25:             {
+  26:                 for (int i = 0; i < newFile.Count; i++)
+  27:                 {
+  28:                     writer.WriteLine(newFile[i]);
+  29:                 }
+  30:             }
+  31:         }
+  32: 
+  33:         private static void ReadFile(List<string> newFile, string fileName)
+  34:         {
+  35:             StreamReader reader = new StreamReader(fileName);
+  36:             using (reader)
+  37:             {
+  38:                 string line = reader.ReadLine();
+  39:                 int count = 1;
+  40:                 string str;
+  41:                 while (line != null)
+  42:                 {
+  43:                     str = String.Format("{0,4}: {1}", count, line);
+  44:                     newFile.Add(str);
+  45:                     line = reader.ReadLine();
+  46:                     count++;
+  47:                 }
+  48:             }
+  49:         }
+  50:     }
+  51: }

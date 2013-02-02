@@ -1,0 +1,3 @@
+this is input A
+still input A
+it has 3 lines (A)

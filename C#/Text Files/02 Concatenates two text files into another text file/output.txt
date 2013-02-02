@@ -1,0 +1,7 @@
+this is input A
+still input A
+it has 3 lines (A)
+this is input B
+still input B
+:) ;)
+it has 4 lines (B)

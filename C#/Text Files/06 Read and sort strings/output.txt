@@ -1,0 +1,48 @@
+
+
+
+
+
+                    line = reader.ReadLine();
+                    newFile.Add(line);
+                    writer.WriteLine(newFile[i]);
+                {
+                {
+                }
+                }
+                for (int i = 0; i < newFile.Count; i++)
+                string line = reader.ReadLine();
+                while (line != null)
+            {
+            {
+            }
+            }
+            List<string> newFile = new List<string>();
+            newFile.Sort();
+            ReadFile(newFile, @"..\..\Program.cs");
+            StreamReader reader = new StreamReader(fileName);
+            StreamWriter writer = new StreamWriter(fileName);
+            using (reader)
+            using (writer)
+            WriteFile(newFile, @"..\..\output.txt");
+        {
+        {
+        {
+        }
+        }
+        }
+        private static void ReadFile(List<string> newFile, string fileName)
+        private static void WriteFile(List<string> newFile, string fileName)
+        static void Main(string[] args)
+    {
+    }
+    class Program
+{
+}
+namespace _06_Read_and_sort_strings
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System;
