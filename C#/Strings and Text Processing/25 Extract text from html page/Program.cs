@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -25,16 +26,40 @@ namespace _25_Extract_text_from_html_page
                                 </body>
                            </html>";
 
+            string html = "";
+
+            using (WebClient client = new WebClient())
+            {
+                try
+                {
+                    html = client.DownloadString("http://www.lipsum.com/");
+                }
+                catch (ArgumentNullException e)
+                {
+                    Console.WriteLine("null instead of address passed");
+                }
+                catch (WebException e)
+                {
+                    Console.WriteLine("error while DownloadString file");
+                }
+                catch (NotSupportedException e)
+                {
+                    Console.WriteLine("DownloadString() cann't be called");
+                }
+
+            }
 
             Regex regexTitle = new Regex(@"<title>(\s*\w.*)</title>", RegexOptions.Singleline);
             Regex regexBodyText = new Regex(@"<body>(.*)</body>", RegexOptions.Singleline);
             Regex regexBetweenTags = new Regex(@">([^<>]*\w+[^<>]*)<", RegexOptions.Singleline);
 
-            string title = regexTitle.Match(str).Groups[1].Value;
-            string body = regexBodyText.Match(str).Groups[1].Value;
+            string title = regexTitle.Match(html).Groups[1].Value;
+            string body = regexBodyText.Match(html).Groups[1].Value;
             body = Regex.Replace(body, @"\s+", " ");
-            body = Regex.Replace(body, @">\s+", ">");
-            body = Regex.Replace(body, @"\s+<", "<");
+            //Console.WriteLine(body);
+            //Console.WriteLine("### TEST ###");
+            //body = Regex.Replace(body, @">\s+", ">");
+            //body = Regex.Replace(body, @"\s+<", "<");
 
             Console.WriteLine("title: " + title);
 
@@ -46,7 +71,6 @@ namespace _25_Extract_text_from_html_page
                 match = match.NextMatch();
             }
             Console.WriteLine();
-            //Console.WriteLine(body);
 
         }
     }
