@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PHP Variables", "PHP Variables\PHP Variables.csproj", "{47532369-C45B-4E4A-980D-CBB41D981698}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tubes", "Tubes\Tubes.csproj", "{FE9770A8-33C3-482B-A312-4D1AD9BA61B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47532369-C45B-4E4A-980D-CBB41D981698}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47532369-C45B-4E4A-980D-CBB41D981698}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47532369-C45B-4E4A-980D-CBB41D981698}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47532369-C45B-4E4A-980D-CBB41D981698}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE9770A8-33C3-482B-A312-4D1AD9BA61B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE9770A8-33C3-482B-A312-4D1AD9BA61B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE9770A8-33C3-482B-A312-4D1AD9BA61B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE9770A8-33C3-482B-A312-4D1AD9BA61B7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
