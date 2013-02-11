@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace PHP_Variables
 {
-    class Program
+    class PhpVariables
     {
         static void Main(string[] args)
         {

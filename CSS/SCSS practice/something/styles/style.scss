@@ -1,0 +1,104 @@
+﻿@import "reset";
+@import "font_family";
+@import "mixins";
+
+
+$primaryColor: #369;
+$secondaryColor: #eee;
+$pageWidth: 300px;
+
+body 
+{
+	//@include clearFloat();
+	
+	background-color: $primaryColor;
+	font-family: $helvetica;
+
+	height: 400px;
+	
+	> h1 {
+		//margin-bottom: 20px;
+		color: red;
+	}
+
+	#wrapper 
+	{
+		width: $pageWidth;
+		background: white;
+		border: $secondaryColor;
+
+
+		h1 
+		{
+			color: $primaryColor;
+			@include opacity(60);
+		}		
+		@include rounded_borders(#336699, 3px);
+
+		h1 + p 
+		{
+			text-shadow: 2px 2px 2px #cccccc;
+		}
+
+		.text-shadow-class 
+		{
+			
+		}
+
+		
+
+		@include boxShadow(0px, 3px, 5px, 0, #cccccc);
+	}
+
+	div#wrapper + div {
+		//@include gradient(#1e5799, 13%, #7db9e8, 80%);
+		border: 2px solid red;
+		//background: gradient(30deg, #000 50%, #fff 75%, #000 90%);
+
+		p {
+			background-color: white;
+			
+		}		
+		  
+	}
+
+	> article {
+		float: right;
+		overflow: hidden;
+		@include boxShadow(-3px, 3px, 30px, 0px, #cccccc);
+		border: 1px solid white;
+		margin-right: 15px;
+		margin-top: 15px;
+		margin-bottom: 20px;
+		padding: 5px;
+		text-shadow: 0px 1px 0px #aaaaaa;
+		background-color: #EEEE00;
+
+		h2:hover {
+			color: red;
+		}
+	}
+
+	aside p + a {
+		display: block;
+		text-decoration: none;
+		border: 5px double;
+		color: #fff;
+		background-color: #484848;
+		text-align:center;
+		font-size: 28px;
+		margin: 5px 5px 9px 5px;
+		padding: 15px 0px;
+		position: relative;
+		border-radius: 25px;
+		@include boxShadow(2px, 5px, 0, 0, rgba(72,72,72,1));
+		text-shadow: 3px 3px 1px rgba(0,0,0,0.5);
+	}
+	@include gradient(#1e5799, 0%, #7db9e8, 100%);
+
+	.cf {
+		@include clearfix;
+	}
+
+	//@include boxShadowInset(0 3px 30px #ffffff); // why id doesn't work?!
+}
