@@ -56,15 +56,57 @@ body {
       padding-top: 5px;
       padding-bottom: 10px;
       padding-left: 5px;
-      border-bottom: 1px solid black; }
+      border-bottom: 1px solid black;
+      position: relative; }
+      body div#wrapper ul#popup-box li.popup-item:first-child {
+        border-top: 1px solid black; }
       body div#wrapper ul#popup-box li.popup-item a {
         text-decoration: none;
         color: black; }
+        body div#wrapper ul#popup-box li.popup-item a span.current {
+          font-weight: bold; }
         body div#wrapper ul#popup-box li.popup-item a img {
           width: 25px;
           height: 25px; }
       body div#wrapper ul#popup-box li.popup-item div.invisible {
         display: none; }
-      body div#wrapper ul#popup-box li.popup-item:first-child {
-        border-top: 1px solid black; }
+      body div#wrapper ul#popup-box li.popup-item div.popup-content {
+        position: absolute;
+        margin-left: 115px;
+        top: 5px; }
+        body div#wrapper ul#popup-box li.popup-item div.popup-content a.btn-popup-close {
+          border: 1px solid black;
+          border-radius: 5px;
+          padding: 0 5px;
+          position: absolute;
+          top: 15px;
+          right: 15px; }
+          body div#wrapper ul#popup-box li.popup-item div.popup-content a.btn-popup-close:hover {
+            text-decoration: underline; }
+        body div#wrapper ul#popup-box li.popup-item div.popup-content div {
+          width: 210px; }
+          body div#wrapper ul#popup-box li.popup-item div.popup-content div fieldset {
+            border: 1px solid black;
+            padding-left: 15px;
+            padding-bottom: 15px;
+            padding-top: 15px; }
+            body div#wrapper ul#popup-box li.popup-item div.popup-content div fieldset legend {
+              padding: 0 5px;
+              font-size: 1.2em;
+              font-weight: bold; }
+            body div#wrapper ul#popup-box li.popup-item div.popup-content div fieldset button {
+              border-radius: 15px;
+              border-style: none;
+              padding: 5px 10px;
+              background: #cacaca;
+              background: -moz-linear-gradient(top, #cacaca 0%, #6c6c6c 100%);
+              background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cacaca), color-stop(100%, #6c6c6c));
+              background: -webkit-linear-gradient(top, #cacaca 0%, #6c6c6c 100%);
+              background: -o-linear-gradient(top, #cacaca 0%, #6c6c6c 100%);
+              background: -ms-linear-gradient(top, #cacaca 0%, #6c6c6c 100%);
+              background: linear-gradient(to bottom, #cacaca 0%, #6c6c6c 100%);
+              filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$startColor', endColorstr='$endColor',GradientType=0 );
+              color: #333333; }
+              body div#wrapper ul#popup-box li.popup-item div.popup-content div fieldset button:hover {
+                background: #cccccc; }
 

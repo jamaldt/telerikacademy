@@ -76,11 +76,18 @@
     <Content Include="task2\images\registration-form.png" />
     <Content Include="task2\images\text-in-boxes.png" />
     <Content Include="task2\jquery-1.9.0.js" />
+    <Content Include="task2\mixins.css">
+      <DependentUpon>mixins.scss</DependentUpon>
+    </Content>
+    <Content Include="task2\reset.css">
+      <DependentUpon>reset.scss</DependentUpon>
+    </Content>
     <Content Include="task2\style.css">
       <DependentUpon>style.scss</DependentUpon>
     </Content>
     <Content Include="task2\task2.css" />
     <Content Include="task2\task2.html" />
+    <Content Include="task2\test2.html" />
     <Content Include="task3\images\products-list-product-1.png" />
     <Content Include="task3\images\products-list-product-2.png" />
     <Content Include="task3\images\products-list-product-6-button-hover.png" />
@@ -89,6 +96,12 @@
     <Content Include="task3\images\products-list.png" />
     <Content Include="task3\imgs\cart.png" />
     <Content Include="task3\jquery-1.9.0.js" />
+    <Content Include="task1\mixins.css">
+      <DependentUpon>mixins.scss</DependentUpon>
+    </Content>
+    <Content Include="task1\reset.css">
+      <DependentUpon>reset.scss</DependentUpon>
+    </Content>
     <Content Include="task3\mixins.css">
       <DependentUpon>mixins.scss</DependentUpon>
     </Content>
@@ -110,6 +123,10 @@
     <Content Include="task2\style.scss" />
     <Content Include="task3\task3.scss" />
     <Content Include="task1\task1.scss" />
+    <Content Include="task1\reset.scss" />
+    <Content Include="task1\mixins.scss" />
+    <Content Include="task2\reset.scss" />
+    <Content Include="task2\mixins.scss" />
     <Content Include="task3\reset.scss" />
     <Content Include="task3\mixins.scss" />
     <None Include="task3\task3" />
