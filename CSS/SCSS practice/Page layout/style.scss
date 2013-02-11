@@ -1,0 +1,164 @@
+@import "reset";
+@import "mixins";
+@import "fontfamily";
+
+
+body
+{
+	margin: 0 auto;
+	font-family: $times;
+	font-size: 14px;
+	width: 800px;
+	background: #d1d1d1;
+
+	header {
+
+		nav {
+			margin-left: 40px;
+			margin-top: 20px;
+			@include gradient(#e03f60, 0%, #be4058, 100%);
+			width: 720px;
+			height: 45px;
+			
+			ul {
+				float: right;
+				padding: 10px;
+				padding-top: 15px;
+
+				li {
+					display: inline-block;
+					margin-right: 40px;
+					
+					a {
+						text-decoration: none;
+						color: white;
+					}
+
+					&.selected a {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+
+	section {
+
+		nav {
+			margin-left: 75px;
+			width: 650px;
+			border-bottom: 1px solid white;
+			margin-bottom: 17px;
+			ul {
+
+				li {
+					display: inline-block;
+					padding: 8px 8px;
+					background: #9d9ca1;
+					margin-bottom: 2px;
+					margin-top: 20px;
+					margin-right: 8px;
+
+					a {
+						color: white;
+						text-decoration: none;
+						text-transform: uppercase;
+					}
+
+					&.selected {
+						background: #fff4e6;
+
+						a {
+							color: #b8424e;
+						}
+					}
+				}
+			}
+		}
+
+
+		div.frame {
+			background: #fff;
+			width: 308px;
+			color: #9a1f4b;
+			margin-bottom: 15px;
+
+			h3 {
+				background: #fff6e7;
+				padding-left: 15px;
+				padding-top: 15px;
+				//vertical-align: middle;
+				height: 30px;
+				font-weight: bold;
+				font-size: 1.2em;
+			}
+
+			p {
+				padding: 5px 15px;
+				text-align: justify;
+				line-height: 1.3em;
+
+				span {
+					display: block;
+					margin-top: 5px;
+					color: #99a2b1;
+					margin-bottom: 5px;
+
+					em {
+						font-style: italic;
+					}
+				}
+			}
+
+		}
+
+		> article {
+			float: left;
+			margin-left: 75px;
+		}	
+
+		article + article {
+			margin-left: 10px;
+
+		}
+	}
+
+	aside {
+		clear: both;
+		padding-top: 35px;
+		margin-left: 75px;
+		color: #5f5b5a;
+		
+			h1 {
+				color: white;
+				text-transform: uppercase;
+				font-size: 1.4em;
+				font-weight: bold;
+				width: 225px;
+				height: 30px;
+				text-align: center;
+				margin: 0 auto;
+				padding-top: 10px;
+				@include gradient(#e03f60, 0%, #be4058, 100%);
+			}
+			h2 {
+				padding-top: 20px;
+				text-transform: uppercase;
+				font-weight: bold;
+				font-size: 1.4em;
+			}
+			p {
+				margin-top: 20px;
+			}
+	}
+
+	footer {
+		margin-top: 40px;
+		margin-bottom: 20px;
+		p {
+			text-align: center;
+			font-size: 0.9em;
+			color: #97a3af;
+		}
+	}
+}

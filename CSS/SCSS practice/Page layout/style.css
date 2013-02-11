@@ -1,0 +1,164 @@
+/*
+Sass Reset - Converted by Hampton Catlin
+A modification of the original found at...
+http://meyerweb.com/eric/tools/css/reset/
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4,
+h5, h6, p, blockquote, pre, a, abbr, acronym, address, big,
+cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small,
+strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd,
+ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+details, embed, figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary, time, mark, audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer,
+header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  margin: 0 auto;
+  font-family: times, "times new roman", "nimbus roman no9 l", freeserif, "liberation serif", serif;
+  font-size: 14px;
+  width: 800px;
+  background: #d1d1d1; }
+  body header nav {
+    margin-left: 40px;
+    margin-top: 20px;
+    background: #e03f60;
+    background: -moz-linear-gradient(top, #e03f60 0%, #be4058 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e03f60), color-stop(100%, #be4058));
+    background: -webkit-linear-gradient(top, #e03f60 0%, #be4058 100%);
+    background: -o-linear-gradient(top, #e03f60 0%, #be4058 100%);
+    background: -ms-linear-gradient(top, #e03f60 0%, #be4058 100%);
+    background: linear-gradient(to bottom, #e03f60 0%, #be4058 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$startColor', endColorstr='$endColor',GradientType=0 );
+    width: 720px;
+    height: 45px; }
+    body header nav ul {
+      float: right;
+      padding: 10px;
+      padding-top: 15px; }
+      body header nav ul li {
+        display: inline-block;
+        margin-right: 40px; }
+        body header nav ul li a {
+          text-decoration: none;
+          color: white; }
+        body header nav ul li.selected a {
+          text-decoration: underline; }
+  body section nav {
+    margin-left: 75px;
+    width: 650px;
+    border-bottom: 1px solid white;
+    margin-bottom: 17px; }
+    body section nav ul li {
+      display: inline-block;
+      padding: 8px 8px;
+      background: #9d9ca1;
+      margin-bottom: 2px;
+      margin-top: 20px;
+      margin-right: 8px; }
+      body section nav ul li a {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase; }
+      body section nav ul li.selected {
+        background: #fff4e6; }
+        body section nav ul li.selected a {
+          color: #b8424e; }
+  body section div.frame {
+    background: #fff;
+    width: 308px;
+    color: #9a1f4b;
+    margin-bottom: 15px; }
+    body section div.frame h3 {
+      background: #fff6e7;
+      padding-left: 15px;
+      padding-top: 15px;
+      height: 30px;
+      font-weight: bold;
+      font-size: 1.2em; }
+    body section div.frame p {
+      padding: 5px 15px;
+      text-align: justify;
+      line-height: 1.3em; }
+      body section div.frame p span {
+        display: block;
+        margin-top: 5px;
+        color: #99a2b1;
+        margin-bottom: 5px; }
+        body section div.frame p span em {
+          font-style: italic; }
+  body section > article {
+    float: left;
+    margin-left: 75px; }
+  body section article + article {
+    margin-left: 10px; }
+  body aside {
+    clear: both;
+    padding-top: 35px;
+    margin-left: 75px;
+    color: #5f5b5a; }
+    body aside h1 {
+      color: white;
+      text-transform: uppercase;
+      font-size: 1.4em;
+      font-weight: bold;
+      width: 225px;
+      height: 30px;
+      text-align: center;
+      margin: 0 auto;
+      padding-top: 10px;
+      background: #e03f60;
+      background: -moz-linear-gradient(top, #e03f60 0%, #be4058 100%);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e03f60), color-stop(100%, #be4058));
+      background: -webkit-linear-gradient(top, #e03f60 0%, #be4058 100%);
+      background: -o-linear-gradient(top, #e03f60 0%, #be4058 100%);
+      background: -ms-linear-gradient(top, #e03f60 0%, #be4058 100%);
+      background: linear-gradient(to bottom, #e03f60 0%, #be4058 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$startColor', endColorstr='$endColor',GradientType=0 ); }
+    body aside h2 {
+      padding-top: 20px;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 1.4em; }
+    body aside p {
+      margin-top: 20px; }
+  body footer {
+    margin-top: 40px;
+    margin-bottom: 20px; }
+    body footer p {
+      text-align: center;
+      font-size: 0.9em;
+      color: #97a3af; }
+

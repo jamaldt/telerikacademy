@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01 SASS HW Sample Logo", "0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02 SASS HW Image Gallery", "02 SASS HW Image Galery\02 SASS HW Image Gallery.csproj", "{3DB9DC3E-67D7-4D04-BA81-C2DBCE03DDB0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Page layout", "Page layout\Page layout.csproj", "{07DBFB07-3181-4955-B1C6-DCA97C7DFAE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample Menu", "Sample Menu\Sample Menu.csproj", "{942B5185-1C62-4A3B-879A-B6B5EFBD7F91}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +35,14 @@ Global
 		{3DB9DC3E-67D7-4D04-BA81-C2DBCE03DDB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3DB9DC3E-67D7-4D04-BA81-C2DBCE03DDB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3DB9DC3E-67D7-4D04-BA81-C2DBCE03DDB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07DBFB07-3181-4955-B1C6-DCA97C7DFAE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07DBFB07-3181-4955-B1C6-DCA97C7DFAE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07DBFB07-3181-4955-B1C6-DCA97C7DFAE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07DBFB07-3181-4955-B1C6-DCA97C7DFAE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{942B5185-1C62-4A3B-879A-B6B5EFBD7F91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{942B5185-1C62-4A3B-879A-B6B5EFBD7F91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{942B5185-1C62-4A3B-879A-B6B5EFBD7F91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{942B5185-1C62-4A3B-879A-B6B5EFBD7F91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
