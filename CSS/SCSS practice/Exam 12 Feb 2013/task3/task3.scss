@@ -1,0 +1,102 @@
+@import "reset";
+@import "mixins";
+
+
+body
+{
+	width: 960px;
+	font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
+	font-size: 16px;
+	
+	div#wrapper {
+		margin-left: 25px;
+		margin-top: 25px;
+		@include gradient(#68d1ff, 0%, #8cfffb, 100%);
+		border: 1px solid black;
+		border-radius: 15px;
+		text-align: right;
+		width: 380px;
+		padding: 0 15px;
+		padding-top: 17px;
+		color: #333333;
+		padding-bottom: 15px;
+		
+
+		fieldset {
+			border: 3px solid #333333;
+			border-radius: 5px;
+			padding-right: 15px;
+			padding-top: 8px;
+			padding-bottom: 4px;
+			margin-bottom: 2px;
+			
+			legend {
+				padding: 0 15px;
+				font-size: 1.3em;
+				font-style: italic;
+			}
+
+			input {
+				width: 149px;
+				@include gradient(#68d1ff, 0%, #8cfffb, 100%);
+				border: 1px solid #008fce;
+				border-radius: 5px;
+				height: 24px;
+				margin-bottom: 1px;
+				padding-right: 15px;
+				padding-left: 15px;
+			}
+
+			input[type="number"] {
+				width: 40px;
+				padding-left: 5px;
+				padding-right: 0px;
+			}			
+		}
+
+		font-size: 1em;
+
+		input[type="radio"] {
+			margin: 0px;
+			margin-top: 5px;
+			margin-bottom: 18px;
+			
+		}
+
+		button {
+			@include gradient(#36c2ff, 0%, #8bfefb, 100%);
+			border: none;
+			width: 140px;
+			height: 34px;
+			border-radius: 5px;
+			padding-bottom: 2px;
+			padding-right: 7px;
+			//@inclide boxShadow(0px, 2px, 2px, 2px, black);
+			-webkit-box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 1);//, 0px 2px 2px rgba(0, 0, 0, 0.25);
+			font-size: 1.2em;
+			color: #333333;
+
+			&:hover {
+				background: #9be1ff;
+			}
+		}
+
+		input[type="reset"] {
+			width: 119px;
+			@include gradient(#36c2ff, 0%, #8bfefb, 100%);
+			border: none;
+			height: 34px;
+			padding-bottom: 2px;
+			border-radius: 5px;
+			-webkit-box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 1);//, 0px 2px 2px rgba(0, 0, 0, 0.25);
+			font-size: 1.2em;
+			color: #333333;
+
+			
+			&:hover {
+				background: #9be1ff;
+			}	
+		}
+
+	}
+}

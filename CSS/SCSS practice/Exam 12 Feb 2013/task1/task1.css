@@ -1,0 +1,140 @@
+/*
+Sass Reset - Converted by Hampton Catlin
+A modification of the original found at...
+http://meyerweb.com/eric/tools/css/reset/
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4,
+h5, h6, p, blockquote, pre, a, abbr, acronym, address, big,
+cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small,
+strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd,
+ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+details, embed, figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary, time, mark, audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer,
+header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  width: 960px;
+  font-family: Helvetica, Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+  font-size: 18px; }
+  body div#wrapper {
+    margin-left: 50px;
+    margin-top: 50px; }
+    body div#wrapper ul.accordion {
+      width: 400px; }
+      body div#wrapper ul.accordion li {
+        border: 1px solid black; }
+        body div#wrapper ul.accordion li.current > div.accordion-content {
+          display: block; }
+        body div#wrapper ul.accordion li a.accordion-btn {
+          padding: 2px 0;
+          padding-bottom: 3px;
+          display: block;
+          width: 100%;
+          text-align: center;
+          font-size: 1.3em;
+          font-weight: bold;
+          background: #eeeeee;
+          background: -moz-linear-gradient(top, #eeeeee 30%, #aaaaaa 75%);
+          background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #eeeeee), color-stop(75%, #aaaaaa));
+          background: -webkit-linear-gradient(top, #eeeeee 30%, #aaaaaa 75%);
+          background: -o-linear-gradient(top, #eeeeee 30%, #aaaaaa 75%);
+          background: -ms-linear-gradient(top, #eeeeee 30%, #aaaaaa 75%);
+          background: linear-gradient(to bottom, #eeeeee 30%, #aaaaaa 75%);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$startColor', endColorstr='$endColor',GradientType=0 );
+          color: #444444;
+          text-decoration: none; }
+          body div#wrapper ul.accordion li a.accordion-btn:hover {
+            background: #aaaaaa; }
+        body div#wrapper ul.accordion li div.accordion-content {
+          display: none;
+          background: #aaaaaa;
+          padding-left: 15px;
+          padding-top: 7px;
+          padding-bottom: 7px;
+          color: #444444; }
+          body div#wrapper ul.accordion li div.accordion-content h1 {
+            color: #5e5e5e;
+            padding: 6px 0;
+            padding-left: 55px;
+            font-weight: bold;
+            font-size: 1.6em; }
+          body div#wrapper ul.accordion li div.accordion-content p {
+            padding-top: 2px;
+            padding-right: 15px;
+            line-height: 1.25em;
+            text-align: justify; }
+          body div#wrapper ul.accordion li div.accordion-content table {
+            border: 1px solid black;
+            margin-left: 6px;
+            margin-top: 13px;
+            margin-bottom: 13px; }
+            body div#wrapper ul.accordion li div.accordion-content table thead tr th:first-of-type {
+              border-top-left-radius: 15px; }
+            body div#wrapper ul.accordion li div.accordion-content table thead tr th {
+              background: #eeeeee;
+              background: -moz-linear-gradient(top, #eeeeee 0%, #8c8c8c 100%);
+              background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #8c8c8c));
+              background: -webkit-linear-gradient(top, #eeeeee 0%, #8c8c8c 100%);
+              background: -o-linear-gradient(top, #eeeeee 0%, #8c8c8c 100%);
+              background: -ms-linear-gradient(top, #eeeeee 0%, #8c8c8c 100%);
+              background: linear-gradient(to bottom, #eeeeee 0%, #8c8c8c 100%);
+              filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$startColor', endColorstr='$endColor',GradientType=0 );
+              font-weight: bold;
+              border: 1px solid black;
+              padding: 7px 5px; }
+            body div#wrapper ul.accordion li div.accordion-content table tbody tr:nth-child(even) {
+              background: #898989;
+              background: -moz-linear-gradient(top, #898989 0%, #cbcbcb 100%);
+              background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #898989), color-stop(100%, #cbcbcb));
+              background: -webkit-linear-gradient(top, #898989 0%, #cbcbcb 100%);
+              background: -o-linear-gradient(top, #898989 0%, #cbcbcb 100%);
+              background: -ms-linear-gradient(top, #898989 0%, #cbcbcb 100%);
+              background: linear-gradient(to bottom, #898989 0%, #cbcbcb 100%);
+              filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$startColor', endColorstr='$endColor',GradientType=0 ); }
+            body div#wrapper ul.accordion li div.accordion-content table tbody tr:nth-child(odd) {
+              background: #cbcbcb;
+              background: -moz-linear-gradient(top, #cbcbcb 0%, #898989 100%);
+              background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cbcbcb), color-stop(100%, #898989));
+              background: -webkit-linear-gradient(top, #cbcbcb 0%, #898989 100%);
+              background: -o-linear-gradient(top, #cbcbcb 0%, #898989 100%);
+              background: -ms-linear-gradient(top, #cbcbcb 0%, #898989 100%);
+              background: linear-gradient(to bottom, #cbcbcb 0%, #898989 100%);
+              filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$startColor', endColorstr='$endColor',GradientType=0 ); }
+            body div#wrapper ul.accordion li div.accordion-content table tbody td {
+              color: white;
+              border: 1px solid black;
+              padding: 7px 5px; }
+

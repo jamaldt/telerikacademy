@@ -1,0 +1,68 @@
+﻿@mixin rounded_borders($color, $width: 5px, $rounding: 5px) 
+{
+	-moz-border-radius: $rounding $rounding;
+	-webkit-border-radius: $rounding $rounding;
+	-khtml-border-radius: $rounding $rounding;
+	-o-border-radius: $rounding $rounding;
+	border-radius: $rounding $rounding;
+	border: $width $color solid; 
+}
+
+@mixin opacity($opacity) 
+{
+	filter: alpha(opacity=#{$opacity}); // IE 5-9+
+	opacity: $opacity * 0.01; 
+}
+
+
+@mixin boxShadow($horizontalOffset:1px, $verticalOffset:1px, $blur:1px, $spread:1px, $color:#cccccc)
+{
+	-ms-box-shadow: $horizontalOffset $verticalOffset $blur $spread $color;
+	-moz-box-shadow: $horizontalOffset $verticalOffset $blur $spread $color;
+	-webkit-box-shadow: $horizontalOffset $verticalOffset $blur $spread $color;
+	box-shadow: $horizontalOffset $verticalOffset $blur $spread $color; 
+}
+
+
+@mixin boxShadowInset($horizontalOffset:1px, $verticalOffset:1px, $blur:1px, $spread:0px, $color:#cccccc)
+{
+	-moz-box-shadow:inset $horizontalOffset $verticalOffset $blur $spread $color;
+	-webkit-box-shadow:inset $horizontalOffset $verticalOffset $blur $spread $color;
+	box-shadow:inset $horizontalOffset $verticalOffset $blur $spread $color;
+}
+
+
+@mixin gradient($startColor, $startPos, $endColor, $endPos)
+{
+	background: $startColor;
+	background: -moz-linear-gradient(top,  $startColor $startPos, $endColor $endPos);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop($startPos,$startColor), color-stop($endPos,$endColor));
+	background: -webkit-linear-gradient(top,  $startColor $startPos,$endColor $endPos);
+	background: -o-linear-gradient(top,  $startColor $startPos,$endColor $endPos);
+	background: -ms-linear-gradient(top,  $startColor $startPos,$endColor $endPos);
+	background: linear-gradient(to bottom,  $startColor $startPos,$endColor $endPos);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$startColor', endColorstr='$endColor',GradientType=0 );
+}
+
+@mixin gradientThreeColor($middlePos, $endPos)
+{
+	background: #9215f2;
+	background: -moz-linear-gradient(top,  #d593ff 0%, #9321f0 $middlePos, #9215f2 $endPos);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d593ff), color-stop($middlePos,#9321f0), color-stop($endPos,#9215f2));
+	background: -webkit-linear-gradient(top,  #d593ff 0%,#9321f0 $middlePos,#9215f2 $endPos);
+	background: -o-linear-gradient(top,  #d593ff 0%,#9321f0 $middlePos,#9215f2 $endPos);
+	background: -ms-linear-gradient(top,  #d593ff 0%,#9321f0 $middlePos,#9215f2 $endPos);
+	background: linear-gradient(to bottom,  #d593ff 0%,#9321f0 $middlePos,#9215f2 $endPos);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d593ff', endColorstr='#9215f2',GradientType=0 );
+}
+
+@mixin clearfix {
+	zoom:1;
+	&:after {
+		display: block;
+		content: "";
+		height: 0;
+		clear: both;
+	}
+}
+
