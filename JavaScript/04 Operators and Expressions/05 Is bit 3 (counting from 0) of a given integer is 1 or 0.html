@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>Is bit 3 (counting from 0) of a given integer is 1 or 0</title>
+	<link href="../console-styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <p>Write a boolean expression for finding if the bit 3 (counting from 0) of a given integer is 1 or 0.</p>
+    <label for="input-number">Enter number: </label>
+    <input type="text" id="input-number">
+    <br>
+    <a href="#" onclick="onClick()">Enter :)</a>
+    <br>
+	<div id="js-console"></div>
+	<script src="../console-js/js-console.js"></script>
+	<script>
+        function onClick() {
+            var number = jsConsole.readInteger("#input-number");
+            number = 1 & (number >> 3);
+            if (number == 1)
+                jsConsole.writeLine("is 1");
+            else
+                jsConsole.writeLine("is 0");
+        }
+	</script>
+</body>
+</html>

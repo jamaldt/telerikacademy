@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>Odd or even</title>
+	<link href="../console-styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <p>This is sample title</p>
+    <label for="number-input">Write number: </label>
+    <input type="text" id="tb-input">
+    <br>
+    <a href="#" onclick="onClick()">Enter :)</a>
+    <br>
+	<div id="js-console"></div>
+	<script src="../console-js/js-console.js"></script>
+	<script>
+        function onOddOrEvenClick() {
+            var tb = document.getElementById("tb-input");
+            var value = tb.value;
+            var arr = value.split(" ");
+            jsConsole.writeLine(arr[2]);
+        }
+	</script>
+</body>
+</html>
+                                                                                 
+

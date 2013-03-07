@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>Is point (x,  y) is within a circle K(O, 5)</title>
+	<link href="../console-styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <p>Write an expression that checks if given point (x,  y) is within a circle K(O, 5)</p>
+    <label for="input-x">Enter X: </label>
+    <input type="text" id="input-x">
+    <label for="input-y">Enter Y: </label>
+    <input type="text" id="input-y">
+    <br>
+    <a href="#" onclick="onClick()">Enter :)</a>
+    <br>
+	<div id="js-console"></div>
+	<script src="../console-js/js-console.js"></script>
+	<script>
+        function onClick() {
+            var x = jsConsole.readInteger("#input-x");
+            var y = jsConsole.readInteger("#input-y");
+            jsConsole.writeLine("is 0");
+        }
+	</script>
+</body>
+</html>
