@@ -18,7 +18,12 @@
         function onClick() {
             var x = jsConsole.readInteger("#input-x");
             var y = jsConsole.readInteger("#input-y");
-            jsConsole.writeLine("is 0");
+            var c = Math.sqrt(x*x + y*y);
+            
+            if (c < 5)
+                jsConsole.writeLine("inside");
+            else
+                jsConsole.writeLine("outside");
         }
 	</script>
 </body>

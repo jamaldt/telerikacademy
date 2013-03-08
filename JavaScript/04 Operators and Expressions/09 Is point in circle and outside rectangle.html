@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title>Point in circle and outside rectangle</title>
+	<link href="../console-styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <p>Write an expression that checks for given point (x, y) if it is within the circle K( (1,1), 3) and out of the rectangle R(top=1, left=-1, width=6, height=2).</p>
+    <label for="input-x">X: </label>
+    <input type="text" id="input-x">
+    <label for="input-y">Y: </label>
+    <input type="text" id="input-y">
+    <br>
+    <a href="#" onclick="onClick()">Enter :)</a>
+    <br>
+	<div id="js-console"></div>
+	<script src="../console-js/js-console.js"></script>
+	<script>
+        function onClick() {
+            var x = jsConsole.readInteger("#input-x");
+            var y = jsConsole.readInteger("#input-y");
+            var inCircle = false;
+                
+            if ( (x-1)*(x-1) + (y-1)*(y-1) < 9)
+            {
+                jsConsole.writeLine("Point is in circle");
+                if (x > -1 && x < 5 && y < 1 && y > -1)
+                    jsConsole.writeLine("BUT in rectangle");
+                else
+                    jsConsole.writeLine("and outside rectangle");
+            }
+            else
+                jsConsole.writeLine("Point is outside the circle");
+        }
+	</script>
+</body>
+</html>
