@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>Max element</title>
+	<link href="../console-styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <p>Write a script that finds the greatest of given 5 variables.</p>
+
+    <label for="input-n1">Enter numbers separated by spaces: </label>
+    <input type="text" id="input-numbers">
+    <br>
+    <a href="#" onclick="onClick()">Enter :)</a>
+    <br>
+	<div id="js-console"></div>
+	<script src="../console-js/js-console.js"></script>
+	<script>
+        function onClick() {
+        	var tb = document.getElementById("input-numbers");
+            var value = tb.value;
+            var arr = value.split(" ");
+            var max = arr[0];
+
+            for (var i = 1; i < arr.length; i++) {
+                if (max < parseInt(arr[i],10))
+                    max = arr[i];
+            }
+            jsConsole.writeLine("max element is: " + max);
+        }
+	</script>
+</body>
+</html>

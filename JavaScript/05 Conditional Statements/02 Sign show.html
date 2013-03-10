@@ -1,0 +1,45 @@
+<html>
+<head>
+	<title>Show sign</title>
+	<link href="../console-styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <p>Write a script that shows the sign (+ or -) of the product of three real numbers without calculating it. Use a sequence of if statements.</p>
+    <label for="input-n1">Enter number 1: </label>
+    <input type="text" id="input-n1">
+    <label for="input-n2">Enter number 2: </label>
+    <input type="text" id="input-n2">
+    <label for="input-n3">Enter number 3: </label>
+    <input type="text" id="input-n3">
+    <br>
+    <a href="#" onclick="onClick()">Enter :)</a>
+    <br>
+	<div id="js-console"></div>
+	<script src="../console-js/js-console.js"></script>
+	<script>
+        function onClick() {
+            var n1 = jsConsole.readInteger("#input-n1");
+            var n2 = jsConsole.readInteger("#input-n2");
+            var n3 = jsConsole.readInteger("#input-n3");
+            var signPositive = true;
+
+            if (n1 < 0 )
+                signPositive = false;
+            if (n2 < 0)
+                if (signPositive)
+                    signPositive = false;
+                else
+                    signPositive = true;
+            if (n3 < 0)
+                if (signPositive)
+                    signPositive = false;
+                else
+                    signPositive = true;
+            if (signPositive)
+                jsConsole.writeLine("sign is positive");
+            else
+                jsConsole.writeLine("sign is negative");
+        }
+	</script>
+</body>
+</html>

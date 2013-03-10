@@ -1,0 +1,120 @@
+<html>
+<head>
+	<title>Numbers to words</title>
+	<link href="../console-styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <pre>
+Write a script that converts a number in the range [0...999] to a text corresponding to its English pronunciation. Examples:
+	0 ? "Zero"
+	273 ? "Two hundred seventy three"
+	400 ? "Four hundred"
+	501 ? "Five hundred and one"
+	711 ? "Seven hundred and eleven"
+    </pre>
+    <label for="input-n">Enter number : </label>
+    <input type="text" id="input-n">
+    <br>
+    <a href="#" onclick="onClick()">Enter :)</a>
+    <br>
+	<div id="js-console"></div>
+	<script src="../console-js/js-console.js"></script>
+	<script>
+        function onClick() {
+            var n = jsConsole.readFloat("#input-n");
+            n = parseInt(n, 10);
+            var word= "";
+            var words = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen","nineteen", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety", "hundred"];
+
+            if (n < 21) {
+                word = words[n];
+            }
+            else if (n < 100) {
+                var n1 = n % 10;
+                n = Math.floor(n / 10);
+                n %= 10;
+                switch (n) {
+                    case 2:
+                        word += words[20];
+                        break;
+                    case 3:
+                        word += words[21];
+                        break;
+                    case 4:
+                        word += words[22];
+                        break;
+                    case 5:
+                        word += words[23];
+                        break;
+                    case 6:
+                        word += words[24];
+                        break;
+                    case 7:
+                        word += words[25];
+                        break;
+                    case 8:
+                        word += words[26];
+                        break;
+                    case 9:
+                        word += words[27];
+                        break;
+                }
+                if (n1 > 0)
+                    word += " " + words[n1];
+            }
+            else if (n < 1000) {
+                var n1 = n % 10;
+                n = Math.floor(n / 10);
+                var n10 = n % 10;
+                n = Math.floor(n / 10);
+                var n100 = n;
+                n = n10*10 + n1;
+
+                word += words[n100] + " hundred ";
+                if (n < 21) {
+                	word += "and " + words[n];
+                }
+                else if (n10 == 0) {
+                	word += "and " + words[n1];
+                }
+                else {
+                    switch (n10) {
+                        case 2:
+                            word += words[20];
+                            break;
+                        case 3:
+                            word += words[21];
+                            break;
+                        case 4:
+                            word += words[22];
+                            break;
+                        case 5:
+                            word += words[23];
+                            break;
+                        case 6:
+                            word += words[24];
+                            break;
+                        case 7:
+                            word += words[25];
+                            break;
+                        case 8:
+                            word += words[26];
+                            break;
+                        case 9:
+                            word += words[27];
+                            break;
+                    }
+                    if (n1 > 0)
+                        word += " " + words[n1];
+                }
+            }
+            else {
+            	word = "number has to be between [0 - 1000)";
+            }
+
+
+            jsConsole.writeLine(word);
+        }
+	</script>
+</body>
+</html>

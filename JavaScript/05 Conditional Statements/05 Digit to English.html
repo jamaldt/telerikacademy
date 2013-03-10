@@ -1,0 +1,59 @@
+<html>
+<head>
+	<title>Digit to english</title>
+	<link href="../console-styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <p>Write script that asks for a digit and depending on the input shows the name of that digit (in English) using a switch statement.</p>
+    <label for="input-n1">Enter number 1: </label>
+    <input type="text" id="input-n1">
+    <br>
+    <a href="#" onclick="onClick()">Enter :)</a>
+    <br>
+	<div id="js-console"></div>
+	<script src="../console-js/js-console.js"></script>
+	<script>
+        function onClick() {
+            var n1 = jsConsole.readFloat("#input-n1");
+            var word;
+
+            switch (n1) {
+                case 1:
+                    word = "one";
+                    break;
+                case 2:
+                    word = "two";
+                    break;
+                case 3:
+                    word = "three";
+                    break;
+                case 4:
+                    word = "four";
+                    break;
+                case 5:
+                    word = "five";
+                    break;
+                case 6:
+                    word = "six";
+                    break;
+                case 7:
+                    word = "seven";
+                    break;
+                case 8:
+                    word = "eight";
+                    break;
+                case 9:
+                    word = "nine";
+                    break;
+                case 0:
+                    word = "zero";
+                    break;
+                default:
+                    word = "not a digit!";
+            }
+
+            jsConsole.writeLine(word);
+        }
+	</script>
+</body>
+</html>

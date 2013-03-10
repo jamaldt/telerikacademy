@@ -1,0 +1,54 @@
+<html>
+<head>
+	<title>Descending 3 value sort</title>
+	<link href="../console-styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <p>Sort 3 real values in descending order using nested if statements.</p>
+    <label for="input-n1">Enter number 1: </label>
+    <input type="text" id="input-n1">
+    <label for="input-n2">Enter number 2: </label>
+    <input type="text" id="input-n2">
+    <label for="input-n3">Enter number 3: </label>
+    <input type="text" id="input-n3">
+    <br>
+    <a href="#" onclick="onClick()">Enter :)</a>
+    <br>
+	<div id="js-console"></div>
+	<script src="../console-js/js-console.js"></script>
+	<script>
+        function onClick() {
+            var n1 = jsConsole.readFloat("#input-n1");
+            var n2 = jsConsole.readFloat("#input-n2");
+            var n3 = jsConsole.readFloat("#input-n3");
+            var tmp;
+
+            if (n1 < n2) {
+                if (n2 < n3) {
+                    tmp = n3;
+                    n3 = n1;
+                    n1 = tmp;
+                }
+                else {
+                    tmp = n2;
+                    n2 = n1;
+                    n1 = tmp;
+                    if (n2 < n3) {
+                        tmp = n3;
+                        n3 = n2;
+                        n2 = tmp;
+                    }
+                }
+            }
+            else {
+                if (n2 < n3) {
+                    tmp = n3;
+                    n3 = n2;
+                    n2 = tmp;
+                }
+            }
+            jsConsole.writeLine(n1 + " " + n2 + " " + n3);
+        }
+	</script>
+</body>
+</html>
