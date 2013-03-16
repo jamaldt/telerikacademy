@@ -4,12 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace JerryMouse
+namespace Animals
 {
-    public class PlayerMoveDTO
+    interface ISound
     {
-        internal Position position;
-	internal Figure figure;
-
+        String MakeSound(String s);
     }
 }

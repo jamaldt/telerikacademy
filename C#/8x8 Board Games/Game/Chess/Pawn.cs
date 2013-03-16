@@ -5,10 +5,17 @@ using System.Text;
 
 namespace JerryMouse
 {
-    public class Pawn : Figure
+    internal class Pawn : Figure
     {
-	private bool isFirstMove = true;
+        private bool isFirstMove = true;
 
+        internal Pawn(FigureColor color, FigureType type, Position position)
+            : base(color, type, position)
+        {
+        }
+
+
+	// TODO: !!!
         public bool Move(int x, int y)
         {
             int[,] moves = 
@@ -17,9 +24,9 @@ namespace JerryMouse
 		{ 0, 1},
 		{ 1, 1}       };
 
-	    
 
 
+            return false;
 
         }
     }

@@ -5,7 +5,11 @@ using System.Text;
 
 namespace JerryMouse
 {
-    public class Queen : Figure
+    internal class Queen : Figure
     {
+        internal Queen(FigureColor color, FigureType type, Position position)
+            : base(color, type, position)
+        {
+        }
     }
 }

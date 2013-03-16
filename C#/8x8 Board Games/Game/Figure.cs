@@ -7,19 +7,22 @@ namespace JerryMouse
 {
     public abstract class Figure
     {
-        FigureColor color;
-        FigureType type;
+        protected FigureColor color;
+        protected FigureType type;
+        protected Position position;
 
-        Figure(FigureColor color, FigureType type)
+        internal Figure(FigureColor color, FigureType type, Position position)
         {
             this.color = color;
             this.type = type;
+            this.position = position;
         }
 
-        Position position = new Position();
 
         public int X { get { return position.X; } }
         public int Y { get { return position.Y; } }
+        public FigureColor Color { get { return color; } }
+        public FigureType Type { get { return type; } }
 
 
         public void Move(Position pos)

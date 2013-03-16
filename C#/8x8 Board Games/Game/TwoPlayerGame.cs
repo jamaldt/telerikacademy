@@ -15,7 +15,6 @@ namespace JerryMouse
         public static void PlayGame(IGameFactory factory)
         {
             IGame game = factory.GetGame();
-            Position position;
             PlayerMoveDTO playerMoveDTO;
 
             while (true)
@@ -24,7 +23,7 @@ namespace JerryMouse
                 {
                     // Избира фигура, която иска да премести. Връща новата позиция на избраната фигура заедно с фигурара
                     // или нейните координати.
-                    playerMoveDTO = player1.Move(game.GetBoard());
+                    playerMoveDTO = player1.Move(game.Board);
                 }
                 while (!game.isMoveValid(playerMoveDTO));
 
@@ -39,7 +38,7 @@ namespace JerryMouse
                 {
                     // Избира фигура, която иска да премести. Връща новата позиция на избраната фигура заедно с фигурара
                     // или нейните координати.
-                    playerMoveDTO = player2.Move(game.GetBoard());
+                    playerMoveDTO = player2.Move(game.Board);
                 }
                 while (!game.isMoveValid(playerMoveDTO));
 
@@ -61,7 +60,7 @@ namespace JerryMouse
 		switch (X)
 	        {
 	            case 1:
-		        PlayGame(new CheckersFactory);
+		        PlayGame(new CheckersFactory());
 			break;
 		    case 2:
 			PlayGame(new ChessFactory());
@@ -73,7 +72,7 @@ namespace JerryMouse
 
         private static int ShowMenu()
         {
-            throw new NotImplementedException();
+            return 2;
         }
 
     }

@@ -1,48 +1,48 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="JerryMouse.TwoPlayerGame">
-    <Position X="6" Y="0.5" Width="1.5" />
+    <Position X="3.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>wAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAABAABAAA=</HashCode>
       <FileName>TwoPlayerGame.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="JerryMouse.Checkers">
-    <Position X="10.75" Y="2.25" Width="1.5" />
+    <Position X="8.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAIgAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAQAAA=</HashCode>
-      <FileName>Checkers.cs</FileName>
+      <FileName>Checkers\Checkers.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="JerryMouse.CheckersFactory">
-    <Position X="9.5" Y="5.25" Width="1.5" />
+    <Position X="8.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>CheckersFactory.cs</FileName>
+      <FileName>Checkers\CheckersFactory.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="JerryMouse.Chess">
-    <Position X="9.25" Y="2.25" Width="1.5" />
+    <Position X="10.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAIgAAAAAAAAAAAAAQAAAAAAAAAIAAAAAAQAAA=</HashCode>
-      <FileName>Chess.cs</FileName>
+      <FileName>Chess\Chess.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="JerryMouse.ChessFactory">
-    <Position X="11" Y="5.25" Width="1.5" />
+    <Position X="10.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ChessFactory.cs</FileName>
+      <FileName>Chess\ChessFactory.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="JerryMouse.Figure">
-    <Position X="3.75" Y="3.75" Width="1.5" />
+    <Position X="3.25" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAIAAAAAAAAAAIAAAAAABAACAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAIAAAAAABAACAAQAAgAAAYAA=</HashCode>
       <FileName>Figure.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -50,64 +50,92 @@
     <Position X="3.75" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>King.cs</FileName>
+      <FileName>Chess\King.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="JerryMouse.Queen">
     <Position X="5.25" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Queen.cs</FileName>
+      <FileName>Chess\Queen.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="JerryMouse.Rook">
     <Position X="6.75" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Rook.cs</FileName>
+      <FileName>Chess\Rook.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="JerryMouse.Bishop">
-    <Position X="3.75" Y="8.25" Width="1.5" />
+    <Position X="0.75" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Bishop.cs</FileName>
+      <FileName>Chess\Bishop.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="JerryMouse.Pawn">
-    <Position X="5.25" Y="8.25" Width="1.5" />
+    <Position X="8.25" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
-      <FileName>Pawn.cs</FileName>
+      <FileName>Chess\Pawn.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="JerryMouse.Knight">
-    <Position X="6.75" Y="8.25" Width="1.5" />
+    <Position X="2.25" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Knight.cs</FileName>
+      <FileName>Chess\Knight.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="JerryMouse.Player">
-    <Position X="4.25" Y="0.75" Width="1.5" />
+    <Position X="1.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
       <FileName>Player.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="JerryMouse.PlayerMoveDTO">
+    <Position X="5.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>PlayerMoveDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JerryMouse.Position">
+    <Position X="6.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAA=</HashCode>
+      <FileName>Position.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Interface Name="JerryMouse.IGame">
-    <Position X="8.75" Y="0.5" Width="1.5" />
+    <Position X="5.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAIgAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAQAAA=</HashCode>
       <FileName>IGame.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="JerryMouse.IGameFactory">
-    <Position X="10.25" Y="0.5" Width="1.5" />
+    <Position X="7.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>IGameFactory.cs</FileName>
     </TypeIdentifier>
   </Interface>
+  <Enum Name="JerryMouse.FigureColor">
+    <Position X="0.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FigureColor.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="JerryMouse.FigureType">
+    <Position X="0.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAEggAAAAEAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FigureType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

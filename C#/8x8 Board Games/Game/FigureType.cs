@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace JerryMouse
 {
-    enum FigureType
+    public enum FigureType
     {
 	Pawn, King, Bishop, Queen, Rook, Knight
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace JerryMouse
 {
-    enum FigureColor
+    public enum FigureColor
     {
 	Black, White
     }

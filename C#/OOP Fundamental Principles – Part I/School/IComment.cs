@@ -4,12 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace JerryMouse
+namespace School
 {
-    public class PlayerMoveDTO
+    interface IComment
     {
-        internal Position position;
-	internal Figure figure;
-
+        String Comment { get; set; }
     }
 }
