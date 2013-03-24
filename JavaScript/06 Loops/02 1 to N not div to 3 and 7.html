@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Numbers from 1 to N</title>
+	<link href="../console-styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <p>Write numbers from 1 to N not divisible by 3 and 7 at the same time.</p>
+    <label for="input-n1">Enter number: </label>
+    <input type="text" id="input-n1">
+    <br>
+    <button onclick="onClick()">Enter :)</button>
+    <br>
+	<div id="js-console"></div>
+	<script src="../console-js/js-console.js"></script>
+	<script>
+        function onClick() {
+            var n1 = jsConsole.readInteger("#input-n1");
+            for (var i = 1; i < n1; i += 1) {
+            	if ((i%3 == 0) && (i%7 == 0)) {
+            		continue;
+            	}
+                jsConsole.writeLine(i);
+            }
+        }
+
+
+
+	</script>
+</body>
+</html>

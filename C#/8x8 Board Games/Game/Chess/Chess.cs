@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace JerryMouse
+namespace GameEngine
 {
     public class Chess : IGame
     {
         private Figure[,] board = new Figure[8, 8]
+	#region board declaration
         {
 	    {
 		new Rook(FigureColor.Black, FigureType.Rook, new Position(0,0)),
@@ -54,6 +55,7 @@ namespace JerryMouse
 		new Rook(FigureColor.White, FigureType.Rook, new Position(7,7)) 
 	    },
         };
+	#endregion
 
 
 

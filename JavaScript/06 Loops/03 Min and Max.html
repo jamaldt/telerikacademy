@@ -1,0 +1,44 @@
+<html>
+<head>
+	<title>Max and min</title>
+	<link href="../console-styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <p>Find max and min number from a sequence of numbers. Write numbers splitted by space character " ".</p>
+    <label for="number-input">Write number: </label>
+    <input type="text" id="tb-input">
+    <br>
+    <button onclick="onClick()">Enter :)</button>
+    <br>
+	<div id="js-console"></div>
+	<script src="../console-js/js-console.js"></script>
+	<script>
+        function onClick(k) {
+            var tb = document.getElementById("tb-input");
+            var value = tb.value;
+            var arr = value.split(" ");
+
+            for (var i = 0; i < arr.length; i += 1) {
+                arr[i] = parseFloat(arr[i]);
+            }
+
+            var min = Number.MAX_VALUE;
+            var max = Number.MIN_VALUE;
+
+            for(var i in arr){
+                if (min > arr[i]) {
+            	    min = arr[i];
+            	}
+                if (max < arr[i]) {
+            	    max = arr[i];
+            	}
+            }
+
+            jsConsole.writeLine("Min = " + min);
+            jsConsole.writeLine("Max = " + max);
+        }
+	</script>
+</body>
+</html>
+                                                                                 
+

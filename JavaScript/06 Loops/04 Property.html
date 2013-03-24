@@ -1,0 +1,44 @@
+<html>
+<head>
+	<title>Min and max lexicographically props</title>
+	<link href="../console-styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <p>Write a script that finds the lexicographically smallest and largest property in document, window and navigator objects.</p>
+    <br>
+    <button onclick="onClick(document)">Document</button>
+    <button onclick="onClick(navigator)">Navigator</button>
+    <button onclick="onClick(window)">Window</button>
+    <br>
+	<div id="js-console"></div>
+	<script src="../console-js/js-console.js"></script>
+	<script>
+        function onClick(obj) {
+
+            var min = "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"; 
+            var max = "";
+
+            var objProps = [];
+            var i = 0;
+
+            jsConsole.writeLine(i);
+            for(var prop in obj){
+            	
+                if (min > prop) {
+            	    min = prop;
+            	}
+                if (max < prop) {
+            	    max = prop;
+            	}
+            };
+
+            jsConsole.writeLine("Min = " + min);
+            jsConsole.writeLine("Max = " + max);
+        }
+	</script>
+</body>
+</html>
+
+
+
+

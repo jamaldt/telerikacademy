@@ -1,0 +1,82 @@
+<html>
+<head>
+	<title>Odd or even</title>
+	<link href="../console-styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <p>This is sample title</p>
+    <label for="number-input">Write number: </label>
+    <input type="text" id="tb-input" oninput="onInput(this)" style="width:1em;" >
+    <br>
+    <button onclick="onClick()">Enter :)</button>
+    <br>
+	<div id="js-console"></div>
+	<script src="../console-js/js-console.js"></script>
+	<script>
+        function onClick() {
+            document.getElementById("js-console").children[0].innerHTML = "";
+            jsConsole.writeLine("Starting...");
+
+            var tb = document.getElementById("tb-input");
+            var value = tb.value;
+            var arr = value.split(" ");
+
+            jsConsole.writeLine(arr);
+
+            document.getElementById("js-console").innerHTML += '<span id="consoleCursor"></span><br>';
+
+        }
+
+
+        //var myVar=setInterval(function(){myTimer()},600);
+        var showCursor = true;
+        function myTimer()
+        {
+            if (showCursor) {
+                document.getElementById("consoleCursor").innerHTML="";
+            }
+            else {
+                document.getElementById("consoleCursor").innerHTML="&nbsp;";
+            }
+            showCursor = !showCursor;
+        }
+
+        function onInput(element) {
+        	//var strInput = document.getElementById("tb-input").;
+            //onkeypress="this.style.width = (this.value.length * 14)" + 'px';
+            //console.log("element:" + element);
+            //console.log("value length:" + element.value.length);
+            var textLength = element.value.length;
+            console.log(textLength);
+            element.style.width = (textLength * 11) + "px";
+            console.log(getEmSize(document.getElementById("tb-input")));
+            console.log(getDefaultFontSize());
+        }
+
+        function getEmSize(el) {
+//            return Number(getComputedStyle(el, '').fontSize.match(/(\d+(\.\d+)?)px$/)[1]);
+            return Number(getComputedStyle(el, "").fontSize.match(/(\d*(\.\d*)?)px/)[1]);
+        }
+
+        function getDefaultFontSize(pa) {
+             pa= pa || document.body;
+             var who= document.createElement('div');
+
+             who.style.cssText='display:inline-block; padding:0; line-height:1; position:absolute; visibility:hidden; font-size:1em';
+
+             who.appendChild(document.createTextNode('M'));
+             pa.appendChild(who);
+             var fs= [who.offsetWidth, who.offsetHeight];
+             pa.removeChild(who);
+             return fs;
+        }
+         
+
+	</script>
+</body>
+</html>
+                                                                                 
+todo list:
+klik varhu item - strike
+on hover - X to delete
+

@@ -1,0 +1,19 @@
+﻿    Define the data structure binary search tree with operations for:
+    - adding new element
+    - searching element
+    - deleting elements
+
+    It is not necessary to keep the tree balanced. Implement the standard methods 
+from System.Object:
+    - ToString()
+    - Equals(…)
+    - GetHashCode() 
+    - operator ==
+    - operator !=
+
+    Remark: Use two types:
+    - structure BinarySearchTree (for the tree)
+    - class TreeNode (for the tree elements). 
+    
+    Implement IEnumerable<T> to traverse the tree.
+    Implement ICloneable interface for deep copy of the tree. 

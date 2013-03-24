@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D50F4786-9751-4526-8D31-BB09B73CCC59}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AcademyPopcorn</RootNamespace>
+    <AssemblyName>AcademyPopcorn</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="balls\Ball.cs" />
+    <Compile Include="blocks\Block.cs" />
+    <Compile Include="items\Bullet.cs" />
+    <Compile Include="engine\CollisionData.cs" />
+    <Compile Include="engine\CollisionDispatcher.cs" />
+    <Compile Include="engine\ConsoleInterface.cs" />
+    <Compile Include="engine\ConsoleRenderer.cs" />
+    <Compile Include="engine\Engine.cs" />
+    <Compile Include="blocks\ExplodingBlock.cs" />
+    <Compile Include="items\Explosion.cs" />
+    <Compile Include="items\Gift.cs" />
+    <Compile Include="blocks\GiftBlock.cs" />
+    <Compile Include="engine\ICollidable.cs" />
+    <Compile Include="blocks\IndestructibleBlock.cs" />
+    <Compile Include="engine\IObjectProducer.cs" />
+    <Compile Include="engine\IRenderable.cs" />
+    <Compile Include="engine\IUserInterface.cs" />
+    <Compile Include="engine\KeyboardInterface.cs" />
+    <Compile Include="engine\MatrixCoords.cs" />
+    <Compile Include="engine\GameObject.cs" />
+    <Compile Include="engine\IRenderer.cs" />
+    <Compile Include="balls\MeteoriteBall.cs" />
+    <Compile Include="engine\MovingObject.cs" />
+    <Compile Include="AcademyPopcornMain.cs" />
+    <Compile Include="NewEngine.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="engine\Racket.cs" />
+    <Compile Include="items\TrailObject.cs" />
+    <Compile Include="blocks\UnpassableBlock.cs" />
+    <Compile Include="balls\UnstoppableBall.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="PopcornDiagram.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

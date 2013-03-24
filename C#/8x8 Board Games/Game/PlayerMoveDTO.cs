@@ -4,12 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace JerryMouse
+namespace GameEngine
 {
     public class PlayerMoveDTO
     {
         internal Position position;
-	internal Figure figure;
-
+	    internal Figure figure;
     }
 }
