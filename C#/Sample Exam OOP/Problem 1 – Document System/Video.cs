@@ -8,9 +8,9 @@ namespace Problem_1___Document_System
     public class Video : MultimediaDocuments
     {
 
-        private int frameRateFPS;
+        private string frameRateFPS;
 
-        public int FrameRateFPS
+        public string FrameRateFPS
         {
             get { return frameRateFPS; }
             set { frameRateFPS = value; }
@@ -27,5 +27,22 @@ namespace Problem_1___Document_System
         {
             throw new NotImplementedException();
         }
+
+        public override string ToString()
+        {
+            bool isFirstProp = true;
+            StringBuilder str = new StringBuilder();
+            str.Append("VideoDocument[");
+
+            AddPropToString(ref isFirstProp, str, "content", content);
+            AddPropToString(ref isFirstProp, str, "framerate", frameRateFPS);
+            AddPropToString(ref isFirstProp, str, "length", LengthInSeconds);
+            AddPropToString(ref isFirstProp, str, "name", name);
+            AddPropToString(ref isFirstProp, str, "size", SizeInBytes);
+
+            str.Append("]");
+            return str.ToString();
+        }
+
     }
 }

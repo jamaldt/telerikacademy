@@ -8,9 +8,9 @@ namespace Problem_1___Document_System
     public abstract class MultimediaDocuments : Binary
     {
 
-        private int lengthInSeconds;
+        private string lengthInSeconds;
 
-        public int LengthInSeconds
+        public string LengthInSeconds
         {
             get { return lengthInSeconds; }
             set { lengthInSeconds = value; }

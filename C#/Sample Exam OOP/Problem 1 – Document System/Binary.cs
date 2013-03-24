@@ -8,9 +8,9 @@ namespace Problem_1___Document_System
     public abstract class Binary : Document
     {
 
-        private int sizeInBytes;
+        private string sizeInBytes;
 
-        public int SizeInBytes
+        public string SizeInBytes
         {
             get { return sizeInBytes; }
             set { sizeInBytes = value; }

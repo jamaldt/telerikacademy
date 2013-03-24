@@ -8,20 +8,20 @@ namespace Problem_1___Document_System
     public class Excel : OfficeDocument
     {
 
-        private int rows;
+        private string rows;
 
-        public int Rows
+        public string Rows
         {
             get { return rows; }
             set { rows = value; }
         }
 
-        private int col;
+        private string cols;
 
-        public int Col
+        public string Cols
         {
-            get { return col; }
-            set { col = value; }
+            get { return cols; }
+            set { cols = value; }
         }
 
         public Excel(String name) : base(name) { }
@@ -35,5 +35,30 @@ namespace Problem_1___Document_System
         {
             throw new NotImplementedException();
         }
+
+        public override string ToString()
+        {
+            bool isFirstProp = true;
+            StringBuilder str = new StringBuilder();
+            str.Append("ExcelDocument[");
+
+            if (this.IsEncrypted)
+            {
+                str.Append("encrypted");
+            }
+            else
+            {
+                AddPropToString(ref isFirstProp, str, "cols", cols);
+                AddPropToString(ref isFirstProp, str, "content", content);
+                AddPropToString(ref isFirstProp, str, "name", name);
+                AddPropToString(ref isFirstProp, str, "rows", rows);
+                AddPropToString(ref isFirstProp, str, "size", SizeInBytes);
+                AddPropToString(ref isFirstProp, str, "version", Version);
+            }
+
+            str.Append("]");
+            return str.ToString();
+        }
+
     }
 }

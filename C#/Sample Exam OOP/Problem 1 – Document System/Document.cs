@@ -18,6 +18,7 @@ namespace Problem_1___Document_System
         public string Content
         {
             get { return content; }
+            set { content = value; }
         }
 
 
@@ -36,5 +37,21 @@ namespace Problem_1___Document_System
         {
             return base.ToString();
         }
+
+        protected void AddPropToString(ref bool isFirstProp, StringBuilder str, string propName, string propValue)
+        {
+            if (propValue != null && propValue != "")
+            {
+                if (isFirstProp)
+                    isFirstProp = false;
+                else
+                    str.Append(";");
+
+                str.Append(propName);
+                str.Append("=");
+                str.Append(propValue);
+            }
+        }
+
     }
 }

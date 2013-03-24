@@ -8,9 +8,9 @@ namespace Problem_1___Document_System
     public class Audio : MultimediaDocuments
     {
 
-        private int sampleRateHz;
+        private string sampleRateHz;
 
-        public int SampleRateHz
+        public string SampleRateHz
         {
             get { return sampleRateHz; }
             set { sampleRateHz = value; }
@@ -27,5 +27,24 @@ namespace Problem_1___Document_System
         {
             throw new NotImplementedException();
         }
+
+        public override string ToString()
+        {
+            bool isFirstProp = true;
+            StringBuilder str = new StringBuilder();
+            str.Append("AudioDocument[");
+
+            AddPropToString(ref isFirstProp, str, "content", content);
+            AddPropToString(ref isFirstProp, str, "length", LengthInSeconds);
+            AddPropToString(ref isFirstProp, str, "name", name);
+            AddPropToString(ref isFirstProp, str, "samplerate", sampleRateHz);
+            AddPropToString(ref isFirstProp, str, "size", SizeInBytes);
+
+            str.Append("]");
+            return str.ToString();
+        }
+
     }
+
+
 }

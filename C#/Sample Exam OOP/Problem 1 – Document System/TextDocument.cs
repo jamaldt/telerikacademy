@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Problem_1___Document_System
 {
-    public class Text : Document, IEditable
+    public class TextDocument : Document, IEditable
     {
 
         private string charset;
@@ -22,7 +22,7 @@ namespace Problem_1___Document_System
             content = newContent;
         }
 
-        public Text(String name, String content) : base(name, content) { }
+        public TextDocument(String name) : base(name) { }
 
         public override void LoadProperty(string key, string value)
         {
@@ -32,6 +32,20 @@ namespace Problem_1___Document_System
         public override void SaveAllProperties(IList<KeyValuePair<string, object>> output)
         {
             throw new NotImplementedException();
+        }
+
+        public override string ToString()
+        {
+            bool isFirstProp = true;
+            StringBuilder str = new StringBuilder();
+            str.Append("TextDocument[");
+
+            AddPropToString(ref isFirstProp, str, "charset", charset);
+            AddPropToString(ref isFirstProp, str, "content", content);
+            AddPropToString(ref isFirstProp, str, "name", name);
+
+            str.Append("]");
+            return str.ToString();
         }
     }
 }

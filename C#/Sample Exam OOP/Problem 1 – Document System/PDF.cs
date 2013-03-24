@@ -8,9 +8,9 @@ namespace Problem_1___Document_System
     public class PDF : Binary, IEncryptable
     {
 
-        private int numberOfPages;
+        private string numberOfPages;
 
-        public int NumberOfPages
+        public string NumberOfPages
         {
             get { return numberOfPages; }
             set { numberOfPages = value; }
@@ -44,6 +44,28 @@ namespace Problem_1___Document_System
         public override void SaveAllProperties(IList<KeyValuePair<string, object>> output)
         {
             throw new NotImplementedException();
+        }
+
+        public override string ToString()
+        {
+            bool isFirstProp = true;
+            StringBuilder str = new StringBuilder();
+            str.Append("PDFDocument[");
+
+            if (this.IsEncrypted)
+            {
+                str.Append("encrypted");
+            }
+            else
+            {
+                AddPropToString(ref isFirstProp, str, "content", content);
+                AddPropToString(ref isFirstProp, str, "name", name);
+                AddPropToString(ref isFirstProp, str, "pages", numberOfPages);
+                AddPropToString(ref isFirstProp, str, "size", SizeInBytes);
+            }
+
+            str.Append("]");
+            return str.ToString();
         }
     }
 }

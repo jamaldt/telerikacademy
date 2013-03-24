@@ -3,14 +3,14 @@
   <Class Name="DocumentSystem">
     <Position X="0.75" Y="0.5" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AIACAAAAAAAAAIAAAAAAhAAAAAgAAAgAAAAgBkAEAIA=</HashCode>
+      <HashCode>AIACAAAAAAAAAIAAAAAAhAAAAAsBAAgACAAgBkAEAIA=</HashCode>
       <FileName>DocumentSystem.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Problem_1___Document_System.Document">
     <Position X="4" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACAAAAAgAAgAAEAAAAAAQAAAAEAAAAAAAAAEAAAAA=</HashCode>
+      <HashCode>AAACAAAAAgAAgAAEAAAAAAQAAAAEgAAAAAAAAEAAAAA=</HashCode>
       <FileName>Document.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -22,53 +22,53 @@
       <FileName>Binary.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Problem_1___Document_System.Text">
+  <Class Name="Problem_1___Document_System.TextDocument">
     <Position X="5.75" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAAAEAAAAgAAAAAAAAAAAAAAAAAAAAAAgAEAAAAA=</HashCode>
-      <FileName>Text.cs</FileName>
+      <FileName>TextDocument.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Problem_1___Document_System.PDF">
     <Position X="0.5" Y="9" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AQAAIAAAACEAAAARAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AQAAIAAAACEAgAAVAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
       <FileName>PDF.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Problem_1___Document_System.Word">
-    <Position X="0.5" Y="12" Width="1.5" />
+    <Position X="0.5" Y="14" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAACAgAAEAAAAAAAAAAIAAAAAAAAgAEAAAAA=</HashCode>
       <FileName>Word.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Problem_1___Document_System.Excel">
-    <Position X="2" Y="12" Width="1.5" />
+    <Position X="2" Y="14" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAEAAAABAAQAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAgEAEAABAAIAAAACAAAAAAAAAAEAAAAA=</HashCode>
       <FileName>Excel.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Problem_1___Document_System.Audio">
-    <Position X="5.25" Y="11.25" Width="1.5" />
+    <Position X="5.25" Y="13.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAgAAEAAAAAAAAAAAAAAAAAAQAAEAEAAA=</HashCode>
       <FileName>Audio.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Problem_1___Document_System.Video">
-    <Position X="3.75" Y="11.25" Width="1.5" />
+    <Position X="3.75" Y="13.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAgAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAggAEAAIAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
       <FileName>Video.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Problem_1___Document_System.OfficeDocument">
-    <Position X="2.25" Y="9" Width="1.5" />
+    <Position X="2.25" Y="9.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>IQAAICAAACAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>OfficeDocument.cs</FileName>

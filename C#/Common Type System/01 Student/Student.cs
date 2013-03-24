@@ -134,7 +134,7 @@ namespace _01_Student
 
         public override int GetHashCode()
         {
-            return firstName.GetHashCode() ^ lastName.GetHashCode();
+            return (firstName.GetHashCode() ^ lastName.GetHashCode())*-1;
         }
 
         public override string ToString()
