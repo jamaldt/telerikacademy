@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Accordion Control", "Accordion Control\Accordion Control.csproj", "{778071B1-CFEC-4E01-ACE4-6C587EEEAB60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Closures", "Closures\Closures.csproj", "{327DCB41-AA00-4AFA-B3B8-334C605D6C12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DOM Traversal Functions", "DOM Traversal Functions\DOM Traversal Functions.csproj", "{D81579B1-8F17-4B16-9ED8-AD486313C276}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Accordion", "Accordion\Accordion.csproj", "{90396E3B-3CB3-45D6-9962-D528DB19F5F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{778071B1-CFEC-4E01-ACE4-6C587EEEAB60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{778071B1-CFEC-4E01-ACE4-6C587EEEAB60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{778071B1-CFEC-4E01-ACE4-6C587EEEAB60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{778071B1-CFEC-4E01-ACE4-6C587EEEAB60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{327DCB41-AA00-4AFA-B3B8-334C605D6C12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{327DCB41-AA00-4AFA-B3B8-334C605D6C12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{327DCB41-AA00-4AFA-B3B8-334C605D6C12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{327DCB41-AA00-4AFA-B3B8-334C605D6C12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D81579B1-8F17-4B16-9ED8-AD486313C276}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D81579B1-8F17-4B16-9ED8-AD486313C276}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D81579B1-8F17-4B16-9ED8-AD486313C276}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D81579B1-8F17-4B16-9ED8-AD486313C276}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90396E3B-3CB3-45D6-9962-D528DB19F5F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90396E3B-3CB3-45D6-9962-D528DB19F5F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90396E3B-3CB3-45D6-9962-D528DB19F5F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90396E3B-3CB3-45D6-9962-D528DB19F5F3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

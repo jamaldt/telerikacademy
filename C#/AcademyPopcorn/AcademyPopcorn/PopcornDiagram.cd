@@ -115,7 +115,7 @@
       <FileName>engine\IRenderable.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="AcademyPopcorn.IRenderer" Collapsed="true">
+  <Interface Name="AcademyPopcorn.IRenderer">
     <Position X="15.75" Y="7.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAABAAAAIAAAAAAAAAACAAAAAAAAA=</HashCode>

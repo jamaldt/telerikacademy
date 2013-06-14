@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Lexicographically comparer</title>
+    <link href="console-styles/js-console.css" rel="stylesheet" />
+    <script src="script.js"></script>
+</head>
+<body>
+    <p>
+        Write a script that compares two char arrays lexicographically (letter by letter).
+    </p>
+    <p>
+        Enter chars spaced by " ".
+        <br />
+        <label for="input-arr1">First array:</label>
+        <input type="text" id="input-arr1" />
+        <label for="input-arr2">Second array:</label>
+        <input type="text" id="input-arr2" />
+    </p>
+    <p>
+        <button onclick="onClick()">Compare lexicographically</button>
+    </p>
+    <div id="js-console"></div>
+    <script src="console-js/js-console.js"></script>
+    <script>
+        function onClick() {
+            var arr1 = document.getElementById("input-arr1").value.split(" ");
+            var arr2 = document.getElementById("input-arr2").value.split(" ");
+            jsConsole.writeLine("First array is bigger than second: " + compareCharArraysLexicographically(arr1, arr2));
+        }
+    </script>
+	
+</body>
+</html>

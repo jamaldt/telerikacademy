@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>EXAM</title>
+    <script src="controls.js"></script>
+    <script src="script.js"></script>
+    <style>
+        .hide {
+            display: none;
+        }
+
+        .handPointer { 
+            cursor: hand; 
+            cursor: pointer; 
+        }
+
+        td {
+            border: 1px solid black;
+        }
+
+        table {
+            border: 3px solid green;
+        }
+
+        thead {
+            background: teal;
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <p>
+    Creating gridviews is the same as in example. Please note that rendering and attaching events is done as follows:<br />
+    var container = document.querySelector("#grid-view-holder");<br />
+    container.appendChild(schoolsGrid.render());<br />
+     attachExpandGridEvents(container);
+    </p>
+    <p>
+        controls.js - main functionality <br />
+        script.js - create, control, display, attache events
+    </p>
+    <hr />
+    <div id="grid-view-holder"></div>
+    <hr />
+    <h3>Rebuild grid view</h3>
+    <div id="grid-view-holder-storage"></div>
+</body>
+</html>

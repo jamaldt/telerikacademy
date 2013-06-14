@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>HTML text extractor</title>
+	<link href="console-styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <p>
+        Write a function that extracts the content of a html page given as text. The function should return anything that is in a tag, without the tags:
+    </p>
+    <p>
+        <label for="input-text">Enter text:</label>
+        <br />
+        <textarea onclick="load(this)" id="input-text" rows="5" cols="60">
+        </textarea>
+    </p>
+    <p>
+        <button onclick="onClick()">Click me :)</button>
+    </p>
+
+    <div id="js-console"></div>
+	<script src="console-js/js-console.js"></script>
+	<script>
+	    function onClick() {
+	        var text = document.getElementById("input-text").value;
+	        //text = "<html><head><title>Sample site</title></head><body><div>text<div>more text</div>and more...</div>in body</body></html>";
+	        var tagOpen = new RegExp("<.*?>", "gi");
+	        var tagClose = new RegExp("<\/.*?>", "gi");
+
+
+	        text = text.replace(tagClose, "");
+	        text = text.replace(tagOpen, "");
+
+	        jsConsole.writeLine(text);
+
+	    }
+
+	    function load(that) {
+	        that.innerHTML = "<html><head><title>Sample site</title></head><body><div>text<div>more text</div>and more...</div>in body</body></html>";
+	    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Accordion Control Test</title>
+    <script src="accordion.js"></script>
+</head>
+<body>
+    <div id="accordion"></div>
+    <script>
+        var accordion = controls.getAccordion("#accordion");
+        accordion.add("one");
+        accordion.add("two");
+        accordion.add("three");
+        accordion.render();
+        accordion.add("three");
+        accordion.render();
+    </script>
+
+</body>
+</html>

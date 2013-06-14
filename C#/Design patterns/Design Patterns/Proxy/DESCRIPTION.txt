@@ -1,0 +1,8 @@
+﻿The Proxy pattern supports objects that control the creation of and access to other
+objects. The proxy is often a small (public) object that stands in for a more complex
+(private) object that is activated once certain circumstances are clear.
+
+Proxy is one of the basic design patterns. It is an object that you insert in place of the "real"
+object in order to provide additional or different operations—these usually involve
+communication with a "real" object, so a proxy typically acts as a go-between.
+

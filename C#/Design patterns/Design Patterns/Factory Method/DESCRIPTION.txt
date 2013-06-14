@@ -1,0 +1,6 @@
+﻿The Factory Method pattern is a way of creating objects, but letting subclasses
+decide exactly which class to instantiate. Various subclasses might implement the
+interface; the Factory Method instantiates the appropriate subclass based on infor-
+mation supplied by the client or extracted from the current state.
+
+

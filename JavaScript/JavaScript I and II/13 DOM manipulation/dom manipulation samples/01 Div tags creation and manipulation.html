@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Let's manipulate a little divs :)</title>
+    <script>
+
+        var divContainer = document.createElement("div");
+
+        function onBodyLoad() {
+            document.body.appendChild(divContainer);
+        }
+
+        // Returns a random number between min and max
+        function getRandomArbitrary(min, max) {
+            return Math.random() * (max - min) + min;
+        }
+
+        // Returns a random integer between min and max
+        // Using Math.round() will give you a non-uniform distribution!
+        function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        // Generate random css color 
+        // It generates string: rgb(x,x,x)
+        function getRandomColor() {
+            return "rgb(" + getRandomInt(0, 255) + ", " + getRandomInt(0, 255) + ", " + getRandomInt(0, 255) + ")";
+        }
+
+        function createStrongEl(text) {
+            var strong = document.createElement("strong");
+            strong.innerHTML = text;
+            return strong;
+        }
+
+        function generateDivs() {
+            var dFrag = document.createDocumentFragment();
+            var newDiv;
+            
+            for (var i = 0; i < 10; i++) {
+                newDiv = document.createElement("div");
+                newDiv.style.display = "block";
+                newDiv.style.width = getRandomArbitrary(20, 100) + "px";
+                newDiv.style.height = getRandomArbitrary(20, 100) + "px";
+                newDiv.style.background = getRandomColor();
+                newDiv.style.color = getRandomColor();
+                newDiv.style.position = "absolute";
+                newDiv.style.left = getRandomInt(0, 600) + "px";
+                newDiv.style.top = getRandomInt(0, 600) + "px";
+                newDiv.style.borderStyle = "solid";
+                newDiv.style.borderRadius = getRandomInt(0, 30) + "px";
+                newDiv.style.borderColor = getRandomColor();
+                newDiv.style.borderWidth = getRandomInt(1, 20) + "px";
+                newDiv.appendChild(createStrongEl("div"));
+                dFrag.appendChild(newDiv);
+            }
+
+            divContainer.appendChild(dFrag);
+        }
+
+        function clearDivs() {
+            while (divContainer.firstChild) {
+                divContainer.removeChild(divContainer.firstChild);
+            }
+        }
+    </script>
+</head>
+<body onload="onBodyLoad();">
+    <h1>Assignment</h1>
+    <p>
+        Write a script that creates a number of div elements. Each div element must have the following:
+    </p>
+    <ul>
+        <li>
+            Random width and height between 20px and 100px
+        </li>
+        <li>
+            Random background color
+        </li>
+        <li>
+            Random font color
+        </li>
+        <li>
+            Random position on the screen (position:absolute)
+        </li>
+        <li>
+            A strong element with text "div" inside the div
+        </li>
+        <li>
+            Random border-radius
+        </li>
+        <li>
+            Random border color
+        </li>
+        <li>
+            Random border-width between 1px and 20px
+        </li>
+    </ul>
+    <button onclick="generateDivs();">Click me :)</button>
+    <button onclick="clearDivs();">Clear all divs</button>
+</body>
+</html>

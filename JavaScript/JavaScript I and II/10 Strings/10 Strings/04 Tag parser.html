@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Tag parser</title>
+	<link href="console-styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <p>
+        You are given a text. Write a function that changes the text in all regions:<br />
+&lt;upcase&gt;text&lt;/upcase&gt; to uppercase<br />
+&lt;lowcase&gt;text&lt;/lowcase&gt; to lowercase<br />
+&lt;mixcase&gt;text&lt;/mixcase&gt; to mix casing(random)<br />
+        <br />Example:
+        We are &lt;mixcase&gt;living&lt;/mixcase&gt; in a &lt;upcase&gt;yellow submarine&lt;/upcase&gt;. We &lt;mixcase&gt;don't&lt;/mixcase&gt; have &lt;lowcase&gt;anything&lt;/lowcase&gt; else.
+        <br />Result: We are LiVinG in a YELLOW SUBMARINE. We dOn'T have anything else.
+        <br />Regions can be nested.
+    </p>
+    <p>
+        <label for="input-text">Enter text:</label>
+        <br />
+        <textarea id="input-text" rows="5" cols="60">
+We are &lt;mixcase&gt;living&lt;/mixcase&gt; in a &lt;upcase&gt;yellow submarine&lt;/upcase&gt;. We &lt;mixcase&gt;don't&lt;/mixcase&gt; have &lt;lowcase&gt;ANYTHING&lt;/lowcase&gt; else.
+        </textarea>
+    </p>
+    <p>
+        <button onclick="onClick()">Click me :)</button>
+    </p>
+
+    <div id="js-console"></div>
+	<script src="console-js/js-console.js"></script>
+	<script>
+	    function onClick() {
+	        var text = document.getElementById("input-text").value;
+	        var uppercase = new RegExp("<upcase>(.*?)</upcase>", "g");
+	        var lowercase = new RegExp("<lowcase>(.*?)</lowcase>", "g");
+	        var mixcase = new RegExp("<mixcase>(.*?)</mixcase>", "g");
+
+	        text = text.replace(uppercase, toUpperReplacer);
+	        text = text.replace(lowercase, toLowerReplacer);
+	        text = text.replace(mixcase, toMixReplacer);
+
+	        jsConsole.writeLine(text);
+
+	    }
+
+	    function toUpperReplacer() {
+	        return arguments[1].toUpperCase();
+	    }
+
+	    function toLowerReplacer() {
+	        return arguments[1].toLowerCase();
+	    }
+
+	    function toMixReplacer() {
+	        var s = [];
+	        var invert = true;
+	        for (var i = 0; i < arguments[1].length; i++) {
+	            if (invert)
+	                s.push(arguments[1][i].toLowerCase());
+                else
+	                s.push(arguments[1][i].toUpperCase());
+	            invert = !invert;
+	        }
+	        return s.join("");
+	    }
+    </script>
+</body>
+</html>

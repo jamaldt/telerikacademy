@@ -1,0 +1,11 @@
+﻿The Iterator pattern provides a way of accessing elements of a collection sequen-
+tially, without knowing how the collection is structured. As an extension, the pat-
+tern allows for filtering elements in a variety of ways as they are generated.
+
+The Sequence is simply a fixed-sized array of Object with a class wrapped around it. You
+call add( ) to add a new Object to the end of the sequence (if there’s room left). To fetch
+each of the objects in a Sequence, there’s an interface called Selector.
+
+Because Selector is an interface, other classes can
+implement the interface in their own ways, and other methods can take the interface as an
+argument, in order to create more general-purpose code.
