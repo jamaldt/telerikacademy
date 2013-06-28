@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 2 Colourful Rabits", "Problem 2 Colourful Rabits\Problem 2 Colourful Rabits.csproj", "{58022B5E-D3AB-4C6C-BCCF-72171FA29E21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 1 Binary Passwords", "Problem 1 Binary Passwords\Problem 1 Binary Passwords.csproj", "{B11FBF66-0D26-4B8A-B33C-1F61AE404D45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 3 Dividers", "Problem 3 Dividers\Problem 3 Dividers.csproj", "{F836FCFC-CCD7-4CB6-A18B-3C8EEBDBD650}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem 4 Colourful Balls", "Problem 4 Colourful Balls\Problem 4 Colourful Balls.csproj", "{EFAFF75C-77BF-43AE-8D18-FB50CCF52A92}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58022B5E-D3AB-4C6C-BCCF-72171FA29E21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58022B5E-D3AB-4C6C-BCCF-72171FA29E21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58022B5E-D3AB-4C6C-BCCF-72171FA29E21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58022B5E-D3AB-4C6C-BCCF-72171FA29E21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B11FBF66-0D26-4B8A-B33C-1F61AE404D45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B11FBF66-0D26-4B8A-B33C-1F61AE404D45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B11FBF66-0D26-4B8A-B33C-1F61AE404D45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B11FBF66-0D26-4B8A-B33C-1F61AE404D45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F836FCFC-CCD7-4CB6-A18B-3C8EEBDBD650}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F836FCFC-CCD7-4CB6-A18B-3C8EEBDBD650}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F836FCFC-CCD7-4CB6-A18B-3C8EEBDBD650}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F836FCFC-CCD7-4CB6-A18B-3C8EEBDBD650}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFAFF75C-77BF-43AE-8D18-FB50CCF52A92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFAFF75C-77BF-43AE-8D18-FB50CCF52A92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFAFF75C-77BF-43AE-8D18-FB50CCF52A92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFAFF75C-77BF-43AE-8D18-FB50CCF52A92}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

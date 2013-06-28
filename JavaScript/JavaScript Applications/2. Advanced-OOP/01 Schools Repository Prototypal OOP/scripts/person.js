@@ -1,0 +1,1 @@
+﻿Name: petare ivanov, Age: 13, grade: 7

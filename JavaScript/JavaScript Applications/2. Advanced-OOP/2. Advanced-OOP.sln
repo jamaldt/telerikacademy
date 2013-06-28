@@ -1,7 +1,37 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02 Schools Repository Classical OOP", "02 Schools Repository Classical OOP\02 Schools Repository Classical OOP.csproj", "{F884E9EE-CFA7-40BE-A146-4EE182B60CD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03 Image Slider Prototypal OOP", "03 Image Slider Prototypal OOP\03 Image Slider Prototypal OOP.csproj", "{C3D14476-A2A5-41AF-BFF6-DF1DD4BCC252}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04 Favorite Sites Bar", "04 Favorite Sites Bar\04 Favorite Sites Bar.csproj", "{383DBEB2-3762-4492-851A-E6CED65DBB88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01 Schools Repository Prototypal OOP", "01 Schools Repository Prototypal OOP\01 Schools Repository Prototypal OOP.csproj", "{54F6B59B-FE35-4F5B-9FA3-25B48D51CD7E}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F884E9EE-CFA7-40BE-A146-4EE182B60CD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F884E9EE-CFA7-40BE-A146-4EE182B60CD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F884E9EE-CFA7-40BE-A146-4EE182B60CD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F884E9EE-CFA7-40BE-A146-4EE182B60CD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3D14476-A2A5-41AF-BFF6-DF1DD4BCC252}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3D14476-A2A5-41AF-BFF6-DF1DD4BCC252}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3D14476-A2A5-41AF-BFF6-DF1DD4BCC252}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3D14476-A2A5-41AF-BFF6-DF1DD4BCC252}.Release|Any CPU.Build.0 = Release|Any CPU
+		{383DBEB2-3762-4492-851A-E6CED65DBB88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{383DBEB2-3762-4492-851A-E6CED65DBB88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{383DBEB2-3762-4492-851A-E6CED65DBB88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{383DBEB2-3762-4492-851A-E6CED65DBB88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54F6B59B-FE35-4F5B-9FA3-25B48D51CD7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54F6B59B-FE35-4F5B-9FA3-25B48D51CD7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54F6B59B-FE35-4F5B-9FA3-25B48D51CD7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54F6B59B-FE35-4F5B-9FA3-25B48D51CD7E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
